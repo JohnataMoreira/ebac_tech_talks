@@ -26,11 +26,11 @@ const contaAsHoras = setInterval(function () {
   );
 
   document.getElementById(
-    "contador"
+    "#contador"
   ).innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
 
   if (distanciaAteOEvento < 0) {
     clearInterval(contaAsHoras);
-    document.getElementById("contador").innerHTML = "Evento expirado";
+    document.getElementById("#contador").innerHTML = "Evento expirado";
   }
 }, 1000);
